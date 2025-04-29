@@ -127,7 +127,9 @@ def setup_web3():
     
     return web3
 
-
+def show_security_warning():
+    print("\033[91m" + "警告: 此文件包含私鑰等敏感信息，請勿提交到版本控制系統！" + "\033[0m")
+    print("當前使用的.gitignore配置已包含.env文件過濾")
 
 def send_eth_transaction(web3, to_address, amount_eth=0.1):
     try:
