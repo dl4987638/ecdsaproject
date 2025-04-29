@@ -1,0 +1,5 @@
+#忽略全部內容
+*
+#除了main.py,和ignore本身
+!.gitignore
+!main.py
